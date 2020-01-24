@@ -46,8 +46,8 @@ purchaseAddButtonEl.onclick = evt => {
         purchasesTotalEl.textContent = `Сумма: ${purchasesTotal}`;
     };
 
-    const purchaseUpButtonEl = purchaseEl.querySelector('[data-action=up]');
-    purchaseUpButtonEl.onclick = () => {
+    const purchaseUppButtonEl = purchaseEl.querySelector('[data-action=up]');
+    purchaseUppButtonEl.onclick = () => {
         if (purchaseEl == purchaseEl.parentNode.firstChild) {
             purchasesListEl.insertBefore(purchaseEl, null);
         }
